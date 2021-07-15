@@ -42,7 +42,7 @@ async def callback_data(client, update: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
 
         await update.message.edit_text(
-            """<b>🔻AutoCaption Bot🔻\n\nTake a look at the end of the video\nIt has to say\n\n🖥️Youtube Tutorial Video\n\nHeroku 👉 https://dashboard.heroku.com/\n\n© @Mo_Tech_YT</b>""",
+            """<b>🔻AutoCaption Bot🔻</b>""",
             reply_markup=reply_markup,
             parse_mode="html"
         )
@@ -50,7 +50,7 @@ async def callback_data(client, update: CallbackQuery):
     if query_data == "about":
         buttons = [[
             InlineKeyboardButton("🗣️Group", url="t.me/mo_tech_Group"),
-            InlineKeyboardButton("Channel📢", url="https://t.me/M_STER_TECH)
+            InlineKeyboardButton("Channel📢", url="https://t.me/M_STER_TECH")
             ],[
             InlineKeyboardButton("🏠Home", url=f"https://t.me/{USERNAME}?start=start"),
             InlineKeyboardButton("🔙Back", callback_data="heroku")
