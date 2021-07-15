@@ -15,8 +15,8 @@ async def start(client, update):
     reply_markup =  InlineKeyboardMarkup(
                                          [[
         InlineKeyboardButton("help↗️", callback_data="heroku"),
-        InlineKeyboardButton("🗣️Group", url="t.me/mo_tech_Group"),
-        InlineKeyboardButton("Channel📢", url="t.me/mo_tech_yt")
+        InlineKeyboardButton("🗣️Group", url="t.me/M_SRER_TECH_GROUP"),
+        InlineKeyboardButton("Channel📢", url="t.me/M_STER_TECH")
         ]]
     )
     await update.reply_text(
@@ -50,12 +50,10 @@ async def callback_data(client, update: CallbackQuery):
     if query_data == "about":
         buttons = [[
             InlineKeyboardButton("🗣️Group", url="t.me/mo_tech_Group"),
-            InlineKeyboardButton("Channel📢", url="t.me/mo_tech_yt"),
-            InlineKeyboardButton("📃Bot List", url="https://t.me/Mo_Tech_YT/176")
+            InlineKeyboardButton("Channel📢", url="https://t.me/M_STER_TECH)
             ],[
             InlineKeyboardButton("🏠Home", url=f"https://t.me/{USERNAME}?start=start"),
-            InlineKeyboardButton("🔙Back", callback_data="heroku"),
-            InlineKeyboardButton("❌️Close", callback_data="motech")
+            InlineKeyboardButton("🔙Back", callback_data="heroku")
             ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
